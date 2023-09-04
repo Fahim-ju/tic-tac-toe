@@ -56,7 +56,10 @@ export default class Game extends Component{
         let status;
         if(winner){
             status = "Winner is "+winner; 
-        }else {
+        }else if(this.state.stepNumber >= 9){
+            status = "Game DRAW";
+        }
+        else {
             status = "Next Player is " + (this.state.xIsNext?'X':'O');
         }
         return(
