@@ -1,20 +1,26 @@
-
-.square{
-  background: white;
-  border: 1px solid gray;
+.square {
+  background: #61dafb; 
+  border: 1px solid #000; 
   float: left;
-  margin-right: -1px ;
+  margin-right: -1px;
   margin-top: -1px;
-  padding: 0;
+  margin: 5px;
+  padding: 0px;
   width: 80px;
   height: 80px;
   text-align: center;
-  font-size: 40px;
+  font-size: 36px; 
   font-weight: bold;
   line-height: 80px;
   display: inline-block;
+  transition: background 0.3s ease-in-out; 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Add a hover effect to change background color when hovering over a square */
+.square:hover {
+  background: #4c8dff; 
+}
 .square:focus{
   outline: none;
 }
